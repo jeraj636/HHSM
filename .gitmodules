@@ -1,0 +1,3 @@
+[submodule "HenigmaEngine"]
+	path = HenigmaEngine
+	url = https://github.com/jeraj636/HenigmaEngine
