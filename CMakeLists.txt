@@ -4,7 +4,8 @@ project(HHSM)
 
 add_executable(${PROJECT_NAME}
         src/test.cpp
-        src/Scene/Zacetna.cpp
+        src/Scene/Glavna.cpp
+        src/Scene/Objekt/Objekt.cpp
 )
 add_subdirectory(src/HenigmaEngine/)
 include_directories(${PROJECT_NAME}

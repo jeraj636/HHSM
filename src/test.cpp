@@ -3,20 +3,16 @@
 #include "Scena/Scena.h"
 #include "Scena/TestScena.h"
 #include "Matematika/Matematika.h"
-#include "Scene/Zacetna.h"
+#include "Scene/Glavna.h"
 #include "ostalo/ostalo.h"
 int main()
 {
     Render rend;
-    rend.Init("HenigmaEngine");
+    rend.Init("HHSM");
 
-    // TestScena test;
-    // rend.DodajSceno(test.Naslov(), "test");
-    // rend.AktivirajSceno("test");
-
-    Zacetna zacetna;
-    rend.DodajSceno(zacetna.Naslov(), "zacetna");
-    rend.AktivirajSceno("zacetna");
+    Glavna glavna;
+    rend.DodajSceno(glavna.Naslov(), "Glavna");
+    rend.AktivirajSceno("Glavna");
     while (!rend.AliSeMoramZapreti())
     {
         rend.OkvirZac();
