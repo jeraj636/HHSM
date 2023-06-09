@@ -19,6 +19,6 @@ private:
     Objekt levTopBar;
     Objekt seperator;
     Objekt terminal;
-    // Objekt terminalTopBar;
+    Objekt terminalTopBar;
     uint32_t belaTek;
 };

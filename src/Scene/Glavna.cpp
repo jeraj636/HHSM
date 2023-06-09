@@ -41,19 +41,24 @@ void Glavna::Zacetek(Render *Ren)
 
     topBar.rot = 0;
     topBar.Bobj = Barva(0x707070ff);
+    topBar.tek = belaTek;
 
     levMeni.Init(rend);
     levMeni.Bobj = Barva(0x707070ff);
+    levMeni.tek = belaTek;
 
     levTopBar.Init(rend);
     levTopBar.Bobj = Barva(0xa9a9a9ff);
+    levTopBar.tek = belaTek;
 
     seperator.Init(rend);
     seperator.Bobj = Barva(0x222222ff);
+    seperator.tek = belaTek;
 
     terminal.Init(rend);
     terminal.Bobj = Barva(0xffffffff);
+    terminal.tek = belaTek;
 
-    // terminalTopBar.Init(rend);
-    // terminalTopBar.Bobj = levTopBar.Bobj;
+    terminalTopBar.Init(rend);
+    terminalTopBar.Bobj = levTopBar.Bobj;
 }
