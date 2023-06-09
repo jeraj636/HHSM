@@ -14,6 +14,7 @@ public:
     Glavna() = default;
 
 private:
+    void PreberiKonfiguracijo();
     Objekt topBar;
     Objekt levMeni;
     Objekt levTopBar;
