@@ -4,7 +4,14 @@
 #include "../HenigmaEngine/src/Matematika/Matematika.h"
 #include "../HenigmaEngine/src/ostalo/ostalo.h"
 #include "Objekt/Objekt.h"
-
+#include <string>
+#include "../HenigmaEngine/src/Render/Render.h"
+enum class TerminalStvari
+{
+    terminal,
+    debug,
+    error
+};
 class Glavna : public Scena
 {
 public:
@@ -21,5 +28,17 @@ private:
     Objekt seperator;
     Objekt terminal;
     Objekt terminalTopBar;
+    Objekt imeDatotekeBar;
+
+    Objekt ikonaTerminalTerminal;
+    TerminalStvari aktivnaStvarVTerminalu = TerminalStvari::terminal;
+
     uint32_t belaTek;
+    Font font;
+    int fontVelikost;
+    std::string potDoFonta;
+
+private:
+    void Terminal();
+    void Initer();
 };
